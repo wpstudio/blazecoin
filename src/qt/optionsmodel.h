@@ -3,7 +3,7 @@
 
 #include <QAbstractListModel>
 
-/** Interface from Qt to configuration data structure for Bitcoin client.
+/** Interface from Qt to configuration data structure for Blazecoin client.
    To Qt, the options are presented as a list with the different options
    laid out vertically.
    This can be changed to a tree once the settings become sufficiently
@@ -26,14 +26,17 @@ public:
         ProxyPort,         // int
         ProxySocksVersion, // int
         Fee,               // qint64
-        DisplayUnit,       // BitcoinUnits::Unit
+        DisplayUnit,       // BlazecoinUnits::Unit
         DisplayAddresses,  // bool
-        DetachDatabases,   // bool
+        StartMiningAtStartup, //bool
         Language,          // QString
-        OptionIDRowCount,
+        AllowSounds,        // bool
+        CheckUpdatesAtStartup, // bool
+        OptionIDRowCount
     };
 
     void Init();
+    void Reset();
 
     /* Migrate settings from wallet.dat after app initialization */
     bool Upgrade(); /* returns true if settings upgraded */
@@ -44,21 +47,28 @@ public:
 
     /* Explicit getters */
     qint64 getTransactionFee();
-    bool getMinimizeToTray();
-    bool getMinimizeOnClose();
-    int getDisplayUnit();
-    bool getDisplayAddresses();
+    bool getMinimizeToTray() { return fMinimizeToTray; }
+    bool getMinimizeOnClose() { return fMinimizeOnClose; }
+    int getDisplayUnit() { return nDisplayUnit; }
+    bool getDisplayAddresses() { return bDisplayAddresses; }
+    bool getStartMiningAtStartup() { return bStartMiningAtStartup; }
     QString getLanguage() { return language; }
+    bool getAllowSounds() { return bAllowSounds; }
+    bool getCheckUpdatesAtStartup() { return bCheckUpdatesAtStartup; }
 
 private:
     int nDisplayUnit;
     bool bDisplayAddresses;
     bool fMinimizeToTray;
     bool fMinimizeOnClose;
+    bool bStartMiningAtStartup;
     QString language;
+    bool bAllowSounds;
+    bool bCheckUpdatesAtStartup;
 
 signals:
     void displayUnitChanged(int unit);
+    void transactionFeeChanged(qint64);
 };
 
 #endif // OPTIONSMODEL_H

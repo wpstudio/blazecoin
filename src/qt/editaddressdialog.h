@@ -27,15 +27,20 @@ public:
     };
 
     explicit EditAddressDialog(Mode mode, QWidget *parent = 0);
-    ~EditAddressDialog();    
+    ~EditAddressDialog();
 
     void setModel(AddressTableModel *model);
     void loadRow(int row);
 
-    void accept();
-
     QString getAddress() const;
     void setAddress(const QString &address);
+
+public slots:
+    void accept();
+
+private slots:
+    void on_pasteButton_clicked();
+
 private:
     bool saveCurrentRow();
 
