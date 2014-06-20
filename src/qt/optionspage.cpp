@@ -48,7 +48,7 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
 
     /* Window elements init */
 #ifdef Q_OS_MAC
-    ui->tabWindow->setVisible(false);
+    /* ui->tabWindow->setVisible(false); */
 #endif
 
     /* Display elements init */
