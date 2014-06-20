@@ -47,7 +47,9 @@ public:
        @{*/
     Status status;
     int64 depth;
-    int64 open_for; /**< Timestamp if status==OpenUntilDate, otherwise number of blocks */
+    int64 open_for; /**< Timestamp if status==OpenUntilDate, otherwise number
+                      of additional blocks that need to be mined before
+                      finalization */
     /**@}*/
 
     /** Current number of blocks (to know whether cached status is still valid) */
@@ -72,7 +74,7 @@ public:
     };
 
     /** Number of confirmation needed for transaction */
-    static const int NumConfirmations = 2;			// 2 confirmation for BLZ
+    static const int NumConfirmations = 2;
 
     TransactionRecord():
             hash(), time(0), type(Other), address(""), debit(0), credit(0), idx(0)

@@ -6,25 +6,350 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
-    <height>380</height>
+    <width>724</width>
+    <height>343</height>
    </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>235</red>
+        <green>235</green>
+        <blue>235</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="HighlightedText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>171</red>
+        <green>127</green>
+        <blue>130</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>235</red>
+        <green>235</green>
+        <blue>235</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="HighlightedText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>171</red>
+        <green>127</green>
+        <blue>130</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>216</red>
+        <green>223</green>
+        <blue>233</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="HighlightedText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>171</red>
+        <green>127</green>
+        <blue>130</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
   </property>
   <property name="windowTitle">
    <string>Address Book</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#AddressBookPage {
+	background-color: #D8DFE9;
+ }</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
-    <widget class="QLabel" name="labelExplanation">
-     <property name="text">
-      <string>These are your Blazecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</string>
+    <widget class="Line" name="line_6">
+     <property name="styleSheet">
+      <string notr="true">background-color: #0052AE;</string>
      </property>
-     <property name="textFormat">
-      <enum>Qt::PlainText</enum>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
      </property>
-     <property name="wordWrap">
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="wAddressBookHeader" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#wAddressBookHeader {
+	background-color: black;
+}</string>
+     </property>
+     <property name="is_header" stdset="0">
       <bool>true</bool>
      </property>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>0</y>
+        <width>37</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../res.qrc">:/res/address_book.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25_1">
+      <property name="geometry">
+       <rect>
+        <x>46</x>
+        <y>0</y>
+        <width>38</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>55</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../res.qrc">:/res/download.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>81</x>
+        <y>6</y>
+        <width>103</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: #fff;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address Book</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bClose">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>1</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	image: url(:/res/close_normal.png);
+	border: 0px solid gray;
+}
+QPushButton:pressed:flat {
+	image: url(:/res/close_normal.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/close_hover.png);
+}</string>
+      </property>
+      <property name="text">
+       <string notr="true"/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
     </widget>
    </item>
    <item>
@@ -34,6 +359,59 @@
      </property>
      <property name="toolTip">
       <string>Double-click to edit address or label</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QScrollBar:vertical {
+     border: 0px solid grey;
+     background: white;
+     width: 9px;
+     margin: 24px 0px 0 0px;
+ }
+ QScrollBar::handle:vertical {
+     background: #BB9396;
+     min-width: 20px;
+ }
+QScrollBar::sub-line:vertical {
+	height: 0px;
+    width: 0px;
+}
+
+QHeaderView {
+	background-color: #D8DFE9;
+	font-size: 10;
+	text-align:left;
+}
+QHeaderView::section {
+    background-color: #D8DFE9;
+     color: #0052AE;
+    padding-left: 5px;
+    border: 0px solid #6c6c6c;
+	text-align:left;
+}
+
+/* style the sort indicator */
+QHeaderView::down-arrow {
+    image: url(down_arrow.png);
+}
+
+QHeaderView::up-arrow {
+    image: url(up_arrow.png);
+}
+
+QTableView {
+	border: 1px solid #ededed;
+	selection-background-color: #ebebeb;
+	selection-color:  rgb(0, 82, 174);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
      </property>
      <property name="tabKeyNavigation">
       <bool>false</bool>
@@ -47,41 +425,152 @@
      <property name="selectionBehavior">
       <enum>QAbstractItemView::SelectRows</enum>
      </property>
-     <property name="sortingEnabled">
-      <bool>true</bool>
+     <property name="showGrid">
+      <bool>false</bool>
      </property>
      <attribute name="verticalHeaderVisible">
       <bool>false</bool>
      </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>20</number>
+     </attribute>
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_14">
+     <item>
+      <spacer name="horizontalSpacer_18">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item>
       <widget class="QPushButton" name="newAddressButton">
-       <property name="toolTip">
-        <string>Create a new address</string>
+       <property name="minimumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0px solid gray;
+	image: url(:/res/add_contact/normal.png);
+}
+
+QPushButton:pressed:flat {
+	image: url(:/res/add_contact/pressed.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/add_contact/hover.png);
+}
+
+QPushButton:!enabled {
+	image: url(:/res/add_contact/disabled.png);
+}</string>
        </property>
        <property name="text">
-        <string>&amp;New Address</string>
+        <string/>
        </property>
-       <property name="icon">
-        <iconset resource="../bitcoin.qrc">
-         <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="copyToClipboard">
-       <property name="toolTip">
-        <string>Copy the currently selected address to the system clipboard</string>
+       <property name="minimumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0px solid gray;
+	image: url(:/res/duplicate_contact/normal.png);
+}
+
+QPushButton:pressed:flat {
+	image: url(:/res/duplicate_contact/click.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/duplicate_contact/hover.png);
+}
+
+QPushButton:!enabled {
+	image: url(:/res/duplicate_contact/disabled.png);
+}</string>
        </property>
        <property name="text">
-        <string>&amp;Copy Address</string>
+        <string/>
        </property>
-       <property name="icon">
-        <iconset resource="../bitcoin.qrc">
-         <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editButton">
+       <property name="minimumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0px solid gray;
+	image: url(:/res/edit_contact/edit_contact_normal.png);
+}
+
+QPushButton:pressed:flat {
+	image: url(:/res/edit_contact/edit_contact_pressed.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/edit_contact/edit_contact_hover.png);
+}
+
+QPushButton:!enabled {
+	image: url(:/res/edit_contact/edit_contact_disabled.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -91,55 +580,139 @@
         <string>Show &amp;QR Code</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset resource="../blazecoin.qrc">
          <normaloff>:/icons/qrcode</normaloff>:/icons/qrcode</iconset>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="signMessage">
-       <property name="toolTip">
-        <string>Sign a message to prove you own a Bitcoin address</string>
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0px solid gray;
+	image: url(:/res/sign/normal.png);
+}
+
+QPushButton:pressed:flat {
+	image: url(:/res/sign/pressed.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/sign/hover.png);
+}
+
+QPushButton:!enabled {
+	image: url(:/res/sign/disabled.png);
+}</string>
        </property>
        <property name="text">
-        <string>&amp;Sign Message</string>
+        <string/>
        </property>
-       <property name="icon">
-        <iconset resource="../bitcoin.qrc">
-         <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="verifyMessage">
-       <property name="toolTip">
-        <string>Verify a message to ensure it was signed with a specified Bitcoin address</string>
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0px solid gray;
+	image: url(:/res/verify/verify_normal.png);
+}
+
+QPushButton:pressed:flat {
+	image: url(:/res/verify/verify_pressed.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/verify/verify_hover.png);
+}
+
+QPushButton:!enabled {
+	image: url(:/res/verify/verify_disabled.png);
+}</string>
        </property>
        <property name="text">
-        <string>&amp;Verify Message</string>
+        <string/>
        </property>
-       <property name="icon">
-        <iconset resource="../bitcoin.qrc">
-         <normaloff>:/icons/transaction_0</normaloff>:/icons/transaction_0</iconset>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="deleteButton">
-       <property name="toolTip">
-        <string>Delete the currently selected address from the list. Only sending addresses can be deleted.</string>
+       <property name="minimumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0px solid gray;
+	image: url(:/res/del_contact/delete_contact_normal.png);
+}
+
+QPushButton:pressed:flat {
+	image: url(:/res/del_contact/delete_contact_pressed.png);
+}
+
+QPushButton:hover {
+	image: url(:/res/del_contact/delete_contact_hover.png);
+}
+
+QPushButton:!enabled {
+	image: url(:/res/del_contact/delete_contact_disabled.png);
+}</string>
        </property>
        <property name="text">
-        <string>&amp;Delete</string>
+        <string/>
        </property>
-       <property name="icon">
-        <iconset resource="../bitcoin.qrc">
-         <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
+      <spacer name="horizontalSpacer_19">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -159,6 +732,25 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color: #758EB3;
+	color: #FFFFFF;
+	border: 0px solid gray;
+	max-height: 20px;
+	min-height: 20px;
+	max-width: 160px;
+	min-width: 160px;
+}
+
+QPushButton:hover {
+	background-color: #0099CC;
+}
+
+QPushButton:pressed:flat {
+	background-color: #9D0B17;
+}</string>
+       </property>
        <property name="standardButtons">
         <set>QDialogButtonBox::Ok</set>
        </property>
@@ -169,7 +761,25 @@
   </layout>
  </widget>
  <resources>
-  <include location="../bitcoin.qrc"/>
+  <include location="../res.qrc"/>
+  <include location="../blazecoin.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>bClose</sender>
+   <signal>clicked()</signal>
+   <receiver>AddressBookPage</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>870</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

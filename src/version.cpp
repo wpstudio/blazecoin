@@ -1,5 +1,4 @@
-// Copyright (c) 2012 The Bitcoin developers
-// Copyright (c) 2012 Litecoin Developers
+// Copyright (c) 2012 The Bitcoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include <string>
@@ -7,9 +6,9 @@
 #include "version.h"
 
 // Name of client reported in the 'version' message. Report the same name
-// for both bitcoind and bitcoin-qt, to make it harder for attackers to
+// for both blazecoind and blazecoin-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
-const std::string CLIENT_NAME("Satoshi");
+const std::string CLIENT_NAME("BlazecoinFoundation");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   "-beta"
@@ -34,20 +33,18 @@ const std::string CLIENT_NAME("Satoshi");
 #    include "build.h"
 #endif
 
-// git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
+// git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#    define GIT_COMMIT_ID "bff08fa"
-#    define GIT_COMMIT_DATE "$Format:%cD"
+#    define GIT_COMMIT_ID "55c5572"
+#    define GIT_COMMIT_DATE "Mon, 11 Nov 2013 21:22:02 -0600"
 #endif
 
-#define STRINGIFY(s) #s
-
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
-    "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) "-g" commit
+    "v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-g" commit
 
 #define BUILD_DESC_FROM_UNKNOWN(maj,min,rev,build) \
-    "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) "-unk"
+    "v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-unk"
 
 #ifndef BUILD_DESC
 #    ifdef GIT_COMMIT_ID

@@ -28,7 +28,8 @@ namespace json_spirit
     template< class String_type >
     String_type non_printable_to_string( unsigned int c )
     {
-        typedef typename String_type::value_type Char_type;
+        // Silence the warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+        // typedef typename String_type::value_type Char_type;
 
         String_type result( 6, '\\' );
 
@@ -125,7 +126,7 @@ namespace json_spirit
                 case bool_type:  output( value.get_bool() );  break;
                 case int_type:   output_int( value );         break;
 
-                /// Bitcoin: Added std::fixed and changed precision from 16 to 8
+                /// Blazecoin: Added std::fixed and changed precision from 16 to 8
                 case real_type:  os_ << std::showpoint << std::fixed << std::setprecision(8)
                                      << value.get_real();     break;
 
@@ -146,8 +147,8 @@ namespace json_spirit
 
         void output( const Obj_member_type& member )
         {
-            output( Config_type::get_name( member ) ); space(); 
-            os_ << ':'; space(); 
+            output( Config_type::get_name( member ) ); space();
+            os_ << ':'; space();
             output( Config_type::get_value( member ) );
         }
 
@@ -179,7 +180,7 @@ namespace json_spirit
             os_ << start_char; new_line();
 
             ++indentation_level_;
-            
+
             for( typename T::const_iterator i = t.begin(); i != t.end(); ++i )
             {
                 indent(); output( *i );
@@ -198,13 +199,13 @@ namespace json_spirit
 
             indent(); os_ << end_char;
         }
-        
+
         void indent()
         {
             if( !pretty_ ) return;
 
             for( int i = 0; i < indentation_level_; ++i )
-            { 
+            {
                 os_ << "    ";
             }
         }
