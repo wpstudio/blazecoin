@@ -8,3 +8,5 @@ Blazecoin - a fork of Litecoin version with fast block time and faster confirmat
 	- The default ports are 55414 (connect) and 55413 (json rpc).
 	- First 100 blocks only receive 13 coins
 	- Premined 1% in order to do matching fire grants. (Read more in the foundation area)
+
+Note - Make sure you are always using the `master branch` for production use.  The `dev branch` is for testing and coding.
