@@ -1,5 +1,5 @@
 ###
-ALERT
+***ALERT***
 ###
 
 Please don't download this source code right now, I'm in the middle of redoing the coin control aspect of Blazecoin.
