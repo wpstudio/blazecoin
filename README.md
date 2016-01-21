@@ -1,3 +1,11 @@
+###
+ALERT
+###
+
+Please don't download this source code right now, I'm in the middle of redoing the coin control aspect of Blazecoin.
+-- WPStudio
+
+
 Blazecoin - a fork of Litecoin version with fast block time and faster confirmations (2 confirmations needed instead of 6). Like Litecoin it uses scrypt as a proof of work scheme.
 
 	- 30 second block target
