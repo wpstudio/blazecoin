@@ -87,6 +87,22 @@
         </widget>
        </item>
        <item>
+	<widget class="QVBoxLayout" name="verticlaLayout_Wallet">
+	 <property name="title">
+	  <string>Expert</string>
+  	 </property>
+	 <layout class="QVBoxLayout" name="verticalLayout_2">
+	  <item>
+	   <widget class="QCheckBox" name="coinControlFeatures">
+	    <property name="toolTip">
+	     <string>Do you want to show coin control features or not</string>
+            </property>
+	   <property name="text">
+	    <string>Enable coin &amp;control features</string>
+           </property>
+	  </widget>
+	 </item>
+	<item>
         <spacer name="verticalSpacer_Main">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -408,6 +424,9 @@
        </item>
       </layout>
      </widget>
+     </item>
+    </layout>
+    </widget>
     </widget>
    </item>
    <item>
